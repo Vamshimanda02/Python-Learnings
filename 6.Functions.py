@@ -339,11 +339,33 @@
 #         largest_number = num
 # print(largest_number)
 
-nums = [2, -3, 5, 7, -1, 0, 8]
-largest_number = nums[0]
-num = 1
-while num < len(nums):
-    if nums[num] > largest_number:
-        largest_number = nums[num]
-    num += 1
-print(largest_number)
+# nums = [2, -3, 5, 7, -1, 0, 8]
+# largest_number = nums[0]
+# num = 1
+# while num < len(nums):
+#     if nums[num] > largest_number:
+#         largest_number = nums[num]
+#     num += 1
+# print(largest_number)
+
+# 🔓 Next Task (L5-1)
+# Create a function find_max(nums)
+# that:
+# takes a list
+# finds the largest number (using your logic)
+# returns the largest number
+# Then:
+# nums = [2, -3, 5, 7, -1, 0, 8]
+# print(find_max(nums))
+
+
+def find_max(nums):
+    nums = [2, -3, 5, 7, -1, 0, 8]
+    largest_number = nums[0]
+    num = 1
+    
+    while num < len(nums):
+        if nums[num] > largest_number:
+            largest_number = nums[num]
+        num += 1
+    return largest_number
