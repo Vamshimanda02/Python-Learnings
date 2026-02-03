@@ -359,13 +359,41 @@
 # print(find_max(nums))
 
 
-def find_max(nums):
-    nums = [2, -3, 5, 7, -1, 0, 8]
-    largest_number = nums[0]
-    num = 1
+# def find_max(nums):
+#     nums = [2, -3, 5, 7, -1, 0, 8]
+#     largest_number = nums[0]
+#     num = 1
     
-    while num < len(nums):
-        if nums[num] > largest_number:
-            largest_number = nums[num]
-        num += 1
-    return largest_number
+#     while num < len(nums):
+#         if nums[num] > largest_number:
+#             largest_number = nums[num]
+#         num += 1
+#     return largest_number
+
+
+
+# Imagine you want to write a function that:
+# takes a number
+# tells whether it is even or odd
+
+
+def user_num(number):
+    if number % 2 == 0:
+        return "Even Number"
+    else:
+        return "Odd Number"
+
+number = int(input("Enter the Number:"))
+result = user_num(number)
+print(result)
+
+
+# create the function user_num with parameter
+# if parameter is divided by 2
+# return even number 
+# else
+# return odd number 
+
+# take user input 
+# call the function
+# print result of the called function
